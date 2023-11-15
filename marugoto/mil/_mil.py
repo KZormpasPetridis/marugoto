@@ -38,7 +38,7 @@ def train(
     targets: Tuple[SKLearnEncoder, npt.NDArray],
     add_features: Iterable[Tuple[SKLearnEncoder, npt.NDArray]] = [],
     valid_idxs: npt.NDArray[np.int_],
-    n_epoch: int = 32,
+    n_epoch: int = 200, 
     path: Optional[Path] = None,
 ) -> Learner:
     """Train a MLP on image features.
